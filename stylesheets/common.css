@@ -1,0 +1,159 @@
+html, body {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  min-width: 320px;
+}
+body {
+  color: #3d4145;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  scrollbar-width: thin;
+  scrollbar-color: #848e9c #12161c;
+  font-family: system-ui,-apple-system,BlinkMacSystemFont,Helvetica Neue,Roboto,Segoe UI,sans-serif;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 1176371 */
+  src: url('//at.alicdn.com/t/font_1176371_jo63s6gf2qd.eot');
+  src: url('//at.alicdn.com/t/font_1176371_jo63s6gf2qd.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1176371_jo63s6gf2qd.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1176371_jo63s6gf2qd.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1176371_jo63s6gf2qd.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1176371_jo63s6gf2qd.svg#iconfont') format('svg');
+}
+.icon {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  font-size: inherit;
+}
+.icon-earth:before {
+  content: '\e608';
+}
+.icon-triangle-down:before {
+  content: '\e627';
+}
+.icon-balance:before {
+  content: '\e6b4';
+}
+.icon-insect:before {
+  content: '\e619';
+}
+.icon-arrow-right:before {
+  content: '\e644';
+}
+.container {
+  max-width: 1080px;
+  margin: 0px auto;
+}
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after {
+  content: ' ';
+  display: table;
+}
+.clearfix:after,
+.container:after {
+  clear: both;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html, iframe, legend, li, ol, p, pre, textarea, ul {
+  margin: 0;
+  padding: 0;
+  
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul, li {
+  list-style: none;
+}
+.header {
+  font-size: 16px;
+  padding: 25px 0;
+}
+.header__logo {
+  display: block;
+  width: 140px;
+  height: 50px;
+  line-height: 50px;
+  background: url('../images/logo.png');
+  background-size: 100% auto;
+  background-position: 0 center;
+  background-repeat: no-repeat;
+}
+.header .container {
+  padding: 0 15px;
+}
+
+.header__menu__item {
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 15px;
+  margin-right: 15px;
+}
+
+.header__right .dropdown {
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+}
+.dropdown .icon-earth {
+  font-size: 18px;
+}
+.dropdown .icon-triangle-down {
+  font-size: 12px;
+  margin-top: -2px;
+}
+
+
+.community {
+  padding: 80px 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.community-title {
+  font-size: 26px;
+  font-weight: 500;
+}
+.community-desc {
+  margin-top: 15px;
+  color: #5c5c5c;
+  font-size: 18px;
+  max-width: 520px;
+}
+.community-links {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+}
+.community-links > a {
+  color: #ff395e;
+  cursor: pointer;
+}
+.community-links > a > .icon {
+  font-size: 14px;
+  transition: transform .3s ease;
+}
+.community-links > a:hover > .icon {
+  transform: translateX(3px);
+}
+.community-links > a:not(:last-child) {
+  margin-right: 2%;
+}
